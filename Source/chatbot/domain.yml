@@ -1,0 +1,59 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ronaldo 
+  - facebook
+  - zalo
+  - news
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+    image: "https://i.pinimg.com/550x/43/a4/d9/43a4d94d2c08695e38172f2978507f50.jpg"
+  - text: "Bye Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_picture:
+  - text: "player reaches 5 golden balls"
+    image: "https://cdnmedia.webthethao.vn/uploads/media/images/2018/10/31/gettyimages-888930482-f1fe-15409665989811819808980.jpg"
+  - text: "Manchester United player"
+    image: "https://cdn.tuoitre.vn/2021/11/3/2021-11-02t215440z207147257up1ehb21ov3m1rtrmadp3soccer-champions-att-mun-report-16358911237471831203149.jpg"
+  - text: "The greatest player in history"
+    image: "https://www.baobaclieu.vn/uploads/image/2020/07/06/image003.jpg"
+
+  utter_loginFace:
+   - text: "<a href='https://www.facebook.com'>https://www.facebook.com</a>"
+
+  utter_loginZalo:
+   - text: "<a href='https://zalo-chat-static.zadn.vn/'>https://zalo-chat-static.zadn.vn/</a>"
+
+  utter_read_news:
+   - text: "<a href='https://baomoi.com/'>https://baomoi.com/</a>"    
+   - text: "<a href='https://vnexpress.net/'>https://vnexpress.net/</a>"
+   - text: "<a href='https://www.24h.com.vn/'>https://www.24h.com.vn/</a>"
+     
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
